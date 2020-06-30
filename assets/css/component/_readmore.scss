@@ -1,0 +1,15 @@
+.readmore {
+    display: inline-block;
+    padding: 13px 41px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: bold;
+    transition: .4s;
+    font-size: 12px;
+    overflow: hidden;
+    &:hover {
+        color: #fff;
+        background-color: #788992;
+      }
+}

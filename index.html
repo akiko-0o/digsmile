@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGSMILE INC.</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body class="index">
+    <div class="top">
+        <header class="header">
+            <h1 class="header__logo">
+                <a href="#">
+                    <img src="/assets/img/common/site-logo.svg" alt="DIGSMILE INC.">
+                </a>
+            </h1>
+            <div class="header__wrap">
+                <div class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="header__nav">
+                        <li>
+                            <img src="/assets/img/common/logo-img.svg" alt="">
+                        </li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#works">CULTURE</a></li>
+                        <li><a href="#contact">TOPICS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="mv">
+            <div class="mv__title">
+                <h3>デザインで人を笑顔にする会社</h3>
+                <h3>DIGSMILE INC.</h3>
+                <h2>DESIGN<br>FOR<br>SMILE</h2> 
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="wrap"> -->
+        <div class="wrap__inner">
+            <section class="about wrap" id="about">
+                <div class="about__box">
+                    <h2 class="sec-title">ABOUT US</h2>
+                    <p>DIGSMILEは、デザインで人を笑顔にする会社。<br>なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界<br>を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを<br>感じて生きていきたい。<br>DIGSMILEの社名にはそんな想いが込められています。</p>
+                    <div class="about__btn">
+                        <a href="#" class="readmore">READ MORE</a>
+                    </div>
+                </div>
+            </section>
+            <div class="flex wrap">
+                <section class="works"  id="works">
+                    <h2 class="sec-title">WORKS</h2>
+                    <img src="/assets/img/index/works@2x.png" alt="">
+                    <p>DIGSMILEの制作実績を紹介します。</p>
+                    <div class="works__btn">
+                        <a href="#" class="readmore">READ MORE</a>
+                    </div>
+                </section>
+                <section class="culture" id="about">
+                    <h2 class="sec-title">CULTURE</h2>
+                    <img src="/assets/img/index/culture@2x.png" alt="">
+                    <p>DIGSMILEの社内文化について紹介します。</p>
+                    <div class="culture__btn">
+                        <a href="#" class="readmore">READ MORE</a>
+                    </div>
+                    <div class="cb"></div>
+                </section>
+            </div>
+        </div>
+            <section class="topics wrap">
+                <h2 class="sec-title">LATEST TOPICS</h2>
+                <div class="topics__box">
+                    <time>2020.02.01</time>
+                    <p>イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</p>
+                    <time>2020.01.18</time>
+                    <p>プレスリリースのお知らせ DIGGIN’ RECORDS</p>
+                    <time>2020.01.01</time>
+                    <p>新年明けましておめでとうございます</p>
+                </div>
+                <div class="topics__btn">
+                    <a href="#" class="readmore">READ MORE</a>
+                </div>
+                <div class="cb"></div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="wrap">
+                    <div class="contact__wrap">
+                        <h2 class="sec-title">CONTACT</h2>
+                        <p>制作の依頼、取材の依頼、IRや採用についての連絡・お問い<br>合わせはコンタクトページから承っております。<br>まずはお気軽にご連絡ください。担当者から改めて返信いた<br>します。</p>
+                        <div class="contact__btn">
+                            <a href="#" class="readmore">READ MORE</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/assets/img/index/contact@2x.png" alt="">
+                    </div>
+                </div>
+            </section>
+    <!-- </div> -->
+
+    <footer class="footer">
+        <span>&copy;2018 DIGSMILE INC.</span>
+    </footer>
+
+
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('.header__toggle').on('click', function () {
+            $('.header__toggle, .nav').toggleClass('show');
+        });
+        }());
+
+    </script>
+    
+</body>
+</html>
