@@ -73,6 +73,12 @@ img {
   z-index: 99;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    margin: 20px;
+  }
+}
+
 .header__wrap {
   position: absolute;
 }
@@ -110,6 +116,12 @@ img {
   bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .header__nav {
+    width: 100%;
+  }
+}
+
 .header .nav {
   width: 520px;
   position: fixed;
@@ -121,6 +133,15 @@ img {
   visibility: hidden;
   -webkit-transition: opacity .5s, visibility .5s;
   transition: opacity .5s, visibility .5s;
+}
+
+@media screen and (max-width: 767px) {
+  .header .nav {
+    background-color: #222222;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .header__toggle.show {
@@ -176,10 +197,16 @@ img {
 }
 
 .top {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, #222222), to(#222222));
-  background: linear-gradient(90deg, white 50%, #222222 50%, #222222 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(22%, white), color-stop(15%, #222222), to(#222222));
+  background: linear-gradient(90deg, white 22%, #222222 15%, #222222 100%);
   width: 100%;
   height: 740px;
+}
+
+@media screen and (max-width: 767px) {
+  .top {
+    height: 667px;
+  }
 }
 
 .mv {
@@ -190,6 +217,13 @@ img {
   background-position: center;
   width: 1100px;
   height: 640px;
+}
+
+@media screen and (max-width: 767px) {
+  .mv {
+    width: 80%;
+    height: 87%;
+  }
 }
 
 .mv__title {
@@ -206,6 +240,12 @@ img {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .mv__title h2 {
+    font-size: 56px;
+  }
+}
+
 .mv__title h3 {
   color: #ffffff;
   font-size: 20px;
@@ -220,9 +260,23 @@ img {
   font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+  .mv__title h3 {
+    font-size: 16px;
+  }
+}
+
 .wrap {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .wrap__inner {
@@ -250,6 +304,15 @@ img {
   height: 387px;
 }
 
+@media screen and (max-width: 767px) {
+  .about__box {
+    width: 354px;
+    height: 471px;
+    left: 20px;
+    top: 10%;
+  }
+}
+
 .about__box h2 {
   padding-top: 50px;
   padding-left: 30px;
@@ -261,6 +324,15 @@ img {
   line-height: 2em;
   padding-top: 30px;
   padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .about__box p {
+    font-size: 14px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    line-height: 2em;
+  }
 }
 
 .about__btn {
@@ -278,9 +350,21 @@ img {
   padding-top: 80px;
 }
 
+@media screen and (max-width: 767px) {
+  .flex {
+    display: block;
+  }
+}
+
 .works {
   width: 520px;
   height: 531px;
+}
+
+@media screen and (max-width: 767px) {
+  .works {
+    width: 100%;
+  }
 }
 
 .works h2 {
@@ -298,6 +382,12 @@ img {
   width: 520px;
   height: 531px;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .culture {
+    width: 100%;
+  }
 }
 
 .culture h2 {
@@ -340,9 +430,23 @@ img {
   line-height: 2;
 }
 
+@media screen and (max-width: 767px) {
+  .topics__box p {
+    padding: 0;
+  }
+}
+
 .topics__btn {
   clear: both;
   float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .topics__btn {
+    float: none;
+    padding-top: 30px;
+    padding-left: 15px;
+  }
 }
 
 .topics .cb {
@@ -362,6 +466,22 @@ img {
   padding-top: 132px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__wrap {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .contact .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,6 +490,15 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .contact p {

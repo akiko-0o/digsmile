@@ -3,6 +3,9 @@
     display: flex;
     margin: 31.7px 58px;
     z-index: 99;
+    @media screen and (max-width: 767px) {
+        margin: 20px;
+    }
     // クリック前
      &__wrap {
          position: absolute;
@@ -25,7 +28,7 @@
         transition: transform .5s, opacity .5s;
     }
 
-    
+
     &__toggle span:nth-child(1) {
         top: 0;
     }
@@ -38,6 +41,13 @@
         bottom: 10px;
     }
 
+    &__nav {
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
     .nav {
         width: 520px;
         position: fixed;
@@ -48,6 +58,12 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity .5s, visibility .5s;
+        @media screen and (max-width: 767px) {
+            background-color:#222222;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
     }
     
     // クリック後
